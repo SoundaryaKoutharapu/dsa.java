@@ -1,50 +1,62 @@
 
+
 public class FirstAndLastPosition 
 {
-    public int[] searchRange(int[] nums, int target) 
-    {
-        int start = 0;
-        int end = nums.length-1;
-        int[] ans = {-1,-1};
-        while(start<=end)
-        {
-            int mid =  start+(end-start)/2;
 
-            if(target==nums[mid])
-            {
-                searchRangeAgain(nums,target);
-            }
-            else if(target>nums[mid])
-            {
-                start = mid+1;
-            }
-            else
-            {
+    public static  int[] searchRange(int[] nums, int target)
+   {
+       int[] ans = {-1, -1}; 
+
+        ans[0] = search(nums, target,true);  
+        ans[1] = search(nums, target, false);
+    
+      return ans;
+   }
+
+   static int search(int[] nums, int target, boolean findStartIndex)
+   {
+    int ans = -1;
+    int start = 0;
+    int end  = nums.length-1;
+
+     while(start<=end)
+     {
+         int mid  = start+(end-start)/2;
+
+         if(target<nums[mid])
+         {
+             end = mid-1;
+         }
+         else if(target>nums[mid])
+         {
+             start = mid+1;
+         }
+         else 
+         {
+               ans = mid;   
+              
+               if(findStartIndex)
+               {
                 end = mid-1;
+               }
+               else 
+               {
+                  start = mid+1;
+               }  
             }
+     }
+            return ans;
+   }
 
-        }
-        return ans;
-    }
 
-    private int searchRangeAgain(int[] nums, int target) 
+    public static void main(String[] args)
     {
-        int start = 0;
-        int end = nums.length-1;
+       int [] nums = {1,3, 7, 7, 7, 7, 8, 9, 10};
+       int target = 7;   
+       
+       int [] ans = searchRange(nums, target);
 
-        while(start<=end)
-        {
-            int mid =  start+(end-start)/2;
-
-        if(target>nums[mid])
-            {
-                start = mid+1;
-            }
-            else
-            {
-                end = mid-1;
-            }
-       }
-      return nums;
+       System.out.println(ans.toString());
+     
     }
 }
