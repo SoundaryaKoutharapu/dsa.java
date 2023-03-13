@@ -1,7 +1,9 @@
 
-public class SmallestLetter {
+public class SmallestLetter
+ {
     
-    public static char nextGreatestLetter(char[] arr, char target) {
+    public static char nextGreatestLetter(char[] arr, char target) 
+    {
 
         int start = 0;
         int end = arr.length-1;
@@ -9,6 +11,19 @@ public class SmallestLetter {
         while(start<=end)
         {
             int mid = start+(end-start)/2;
+
+            if(target>arr[mid])
+            {
+                start=mid+1;
+            }
+            else if(target<arr[mid])
+            {
+                end = mid-1; 
+            
+            }    
+
+            /*
+
             if(target<arr[mid])
             {
                 end = mid-1;  
@@ -18,26 +33,15 @@ public class SmallestLetter {
                 start=mid+1;
             }
 
-
-            /*
-
-            if(target>arr[mid])
-            {
-                start=mid+1;
-            }
-            else
-            {
-                end = mid-1; 
             */
         }
         return arr[start%arr.length];
     }
 
-
     public static void main(String[] args) 
     {
-        char[] arr  = {'a','b','j','v','z'};
-        char target = 'b';
+        char[] arr  = {'c', 'f', 'j'};
+        char target = 'c';
         System.out.println(nextGreatestLetter(arr,target)); 
     }
 }
