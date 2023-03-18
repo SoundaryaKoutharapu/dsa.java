@@ -6,7 +6,7 @@ public class FindMinIndexOfDuplicateInMountainArray
             {
                 int peek = peekIndexMountain(arr);
                 int firstTry = binary(arr, target, 0,peek);
-                if(firstTry!=1)
+                if(firstTry!=-1)
                 {
                     return firstTry;
                 }
