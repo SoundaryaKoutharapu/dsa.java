@@ -1,4 +1,3 @@
-import javax.lang.model.element.Element;
 
 // https://leetcode.com/problems/find-peak-element/
 
@@ -37,13 +36,12 @@ import javax.lang.model.element.Element;
 public class MountainArray
 {
 
-
-
-
     public static void main(String[] args) 
     {
-        //int[] arr = {16,20,31,4,4,4,0,2,0,1};
-        int[] arr = {1,1,1,1,1,1};
+        //int[] arr = {16,20,31,4,4,4,0,2,0,1};  /
+        //int[] arr = {1,1,1,1,1,1,1,1};   // all numbers same
+        //int[] arr = {3};                 // single index
+        int[] arr = {1,2,2,5,6,7,7,8,3,2,1,1,9,9,0};
         System.out.println(bsSearch(arr));
     }
 
