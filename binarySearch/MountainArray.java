@@ -1,14 +1,14 @@
 
 // https://leetcode.com/problems/find-peak-element/
 
-/* public class MountainArray
+ public class MountainArray
 {
    static int searchMountain(int[] arr) 
    {
        int start = 0;
        int end = arr.length-1;
 
-       while(start!=end)
+       while(start!=end && arr.length!=0)
        {
         int mid = start+(end-start)/2;
          if(arr[mid]>arr[mid+1])
@@ -26,13 +26,16 @@
 
     public static void main(String[] args)
     {
-        int[] arr = {8, 10, 43, 14, 16, 18, 2, 17, 15, 13, 11, 9};
+         int[] arr = {8, 10, 43, 14, 16, 18, 2, 17, 15, 13, 11, 9};
+        // int[] arr = {1,2};
+         // int[] arr = {9};
+        //int[] arr = {};
         int ans = searchMountain(arr);
         System.out.println(ans);
     }
 }
-*/
 
+/* 
 public class MountainArray
 {
 
@@ -41,7 +44,8 @@ public class MountainArray
         //int[] arr = {16,20,31,4,4,4,0,2,0,1};  /
         //int[] arr = {1,1,1,1,1,1,1,1};   // all numbers same
         //int[] arr = {3};                 // single index
-        int[] arr = {1,2,2,5,6,7,7,8,3,2,1,1,9,9,0};
+       // int[] arr = {1,2,2,5,6,7,7,8,3,2,1,1,9,9,0};
+         // int[] arr = {1,2,3};
         System.out.println(bsSearch(arr));
     }
 
@@ -71,4 +75,4 @@ public class MountainArray
         return -1;
     }
 }
-
+*/
