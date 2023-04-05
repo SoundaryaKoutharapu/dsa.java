@@ -87,8 +87,9 @@ public class SearchInRotatedArray
 
     public static void main(String[] args) 
     {
-        int[] arr = {4,5,6,7,8,0,1,2,3};
-        int target = 3;
+       // int[] arr = {4,5,6,7,8,0,1,2,3};
+       int[] arr = {0};
+        int target = 0;
         int ans = pivotBinarySearch(arr, target);
         System.out.println(ans);
     }

@@ -29,8 +29,9 @@ public class Ceiling
     }
     public static void main(String[] args) 
     {
-        int[] arr =  {12,34, 56, 67,78,89,90,123};
-        int target=79;
+        //int[] arr =  {12,34, 56, 67,78,89,90,123};
+        int[] arr = {7,18,23,25,37,43};
+        int target=24;
         System.out.println(binary(arr,target));
     }
 }
