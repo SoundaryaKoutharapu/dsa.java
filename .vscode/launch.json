@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumberProgramRecursion",
+            "request": "launch",
+            "mainClass": "NumberProgramRecursion",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
+            "name": "NumbersProgram",
+            "request": "launch",
+            "mainClass": "NumbersProgram",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
             "name": "SearchInsertPosition",
             "request": "launch",
             "mainClass": "SearchInsertPosition",
