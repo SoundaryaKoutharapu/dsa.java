@@ -6,6 +6,7 @@
         "binarySearch",
         "Arrays",
         "insertionSort",
-        "cycleSort"
+        "cycleSort",
+        "Recursion"
     ]
 }
