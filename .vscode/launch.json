@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FibinocciSeries",
+            "request": "launch",
+            "mainClass": "FibinocciSeries",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
             "name": "NumberProgramRecursion",
             "request": "launch",
             "mainClass": "NumberProgramRecursion",
