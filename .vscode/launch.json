@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UniqueElement",
+            "request": "launch",
+            "mainClass": "UniqueElement",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
             "name": "BSRecursion",
             "request": "launch",
             "mainClass": "BSRecursion",
