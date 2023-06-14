@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MagicNumber",
+            "request": "launch",
+            "mainClass": "MagicNumber",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
             "name": "UniqueElement",
             "request": "launch",
             "mainClass": "UniqueElement",
