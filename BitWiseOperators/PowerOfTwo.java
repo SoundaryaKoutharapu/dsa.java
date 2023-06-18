@@ -2,7 +2,7 @@ public class PowerOfTwo
 {
     public static void main(String[] args) 
     {
-        int n = 256;
+        int n = 16;
         boolean ans  = false;
         int sol = n & (n-1);
 
