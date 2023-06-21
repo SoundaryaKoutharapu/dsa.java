@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NumOfSetBits",
+            "request": "launch",
+            "mainClass": "NumOfSetBits",
+            "projectName": "dsa.java_e88dcf29"
+        },
+        {
+            "type": "java",
             "name": "MagicNumber",
             "request": "launch",
             "mainClass": "MagicNumber",
